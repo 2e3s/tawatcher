@@ -18,7 +18,7 @@
       "targets":"deb",
       "icon": ["../aw-webui/media/logo/logo.png"],
       "resources": [
-        "../aw-webui/media/*"
+        "../aw-webui/dist/*"
       ]
     },
     "allowlist": {

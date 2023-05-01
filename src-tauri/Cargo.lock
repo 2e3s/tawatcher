@@ -441,7 +441,7 @@ dependencies = [
 [[package]]
 name = "awatcher"
 version = "0.1.0"
-source = "git+https://github.com/2e3s/awatcher.git?branch=make-lib#1740ec00c6f36a765e5b23ec5a6824bb35a8ec65"
+source = "git+https://github.com/2e3s/awatcher.git#1740ec00c6f36a765e5b23ec5a6824bb35a8ec65"
 dependencies = [
  "anyhow",
  "aw-client-rust",
