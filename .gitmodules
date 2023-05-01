@@ -1,6 +1,3 @@
 [submodule "aw-webui"]
 	path = aw-webui
 	url = https://github.com/ActivityWatch/aw-webui/
-[submodule "src-tauri/awatcher"]
-	path = src-tauri/awatcher
-	url = https://github.com/2e3s/awatcher

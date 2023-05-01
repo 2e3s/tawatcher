@@ -1,34 +1,32 @@
 {
   "build": {
     "beforeDevCommand": "npm run dev",
-    "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
-    "distDir": "../dist",
-    "withGlobalTauri": true
+    "distDir": "../aw-webui/dist",
+    "withGlobalTauri": false
   },
   "package": {
-    "productName": "tauri-app",
-    "version": "0.0.0"
+    "productName": "tawatcher",
+    "version": "0.0.1"
   },
   "tauri": {
+    "bundle": {
+      "active": true,
+      "identifier": "com.2e3s.tawatcher",
+      "category": "Productivity",
+      "shortDescription": "Watcher and tracker of user activity with reports",
+      "targets":"deb",
+      "icon": ["icons/logo.png"],
+      "resources": [
+        "../aw-webui/dist/*"
+      ]
+    },
     "allowlist": {
       "all": false,
       "shell": {
         "all": false,
         "open": true
       }
-    },
-    "bundle": {
-      "active": true,
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
-      "identifier": "com.tauri.dev",
-      "targets": "all"
     },
     "security": {
       "csp": null
@@ -40,10 +38,14 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "tauri-app",
-        "width": 800,
-        "height": 600
+        "title": "Activity Watcher",
+        "width": 1024,
+        "height": 768
       }
-    ]
+    ],
+    "systemTray": {
+      "iconPath": "icons/logo.png",
+      "iconAsTemplate": true
+    }
   }
 }
