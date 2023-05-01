@@ -16,9 +16,9 @@
       "category": "Productivity",
       "shortDescription": "Watcher and tracker of user activity with reports",
       "targets":"deb",
-      "icon": ["icons/logo.png"],
+      "icon": ["../aw-webui/media/logo/logo.png"],
       "resources": [
-        "../aw-webui/dist/*"
+        "../aw-webui/media/*"
       ]
     },
     "allowlist": {
@@ -44,7 +44,7 @@
       }
     ],
     "systemTray": {
-      "iconPath": "icons/logo.png",
+      "iconPath": "../aw-webui/media/logo/logo.png",
       "iconAsTemplate": true
     }
   }
